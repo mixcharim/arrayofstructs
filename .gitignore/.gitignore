@@ -1,0 +1,94 @@
+//A program that stores patient info and retrieves patient record based on the patient ID entered which displays the patient info previously entered.
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+
+struct Patient{
+    int id;
+    string name, dob;
+    
+    
+    
+    
+};
+
+int main()
+{
+    
+    //Get info about patients
+    
+    Patient *info = new Patient [3];
+    
+    cout<<"Enter Patient ID: ";
+    (cin>>info[1].id).get();
+    cout<<"Enter Patient Name: ";
+    (cin>>info[1].name).get();
+    cout<<"Enter Patient Date of Birth: ";
+    (cin>>info[1].dob).get();
+    
+    cout<<"Enter Patient ID: ";
+    (cin>>info[2].id).get();
+    cout<<"Enter Patient Name: ";
+    (cin>>info[2].name).get();
+    cout<<"Enter Patient Date of Birth: ";
+    (cin>>info[2].dob).get();
+    
+    cout<<"Enter Patient ID: ";
+    (cin>>info[3].id).get();
+    cout<<"Enter Patient Name: ";
+    (cin>>info[3].name).get();
+    cout<<"Enter Patient Date of Birth: ";
+    (cin>>info[3].dob).get();
+    
+    //Request certain patient
+    
+    int i;
+    cout<<"Enter patient ID ";
+    cin>>i;
+    
+    switch(info[i].id){
+        case 1:
+            cout<<info[1].name<<endl;
+            cout<<info[1].dob<<endl;
+            break;
+        case 2:
+            cout<<info[2].name<<endl;
+            cout<<info[2].dob<<endl;
+            break;
+        case 3:
+            cout<<info[3].name<<endl;
+            cout<<info[3].dob<<endl;
+            break;
+        default:
+            cout<<"patient doesn't exist in the system";
+            
+            
+            
+    }
+    
+
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
